@@ -16,6 +16,6 @@ int main(){
         max=tab[i];
 
      }
-     printf("%d",max);
+     printf("LE maximum est: %d",max);
      
 }
