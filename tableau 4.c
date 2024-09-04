@@ -1,9 +1,10 @@
 #include<stdio.h>
-//Écrivez un programme C qui trouve et affiche le plus petit élément dans un tableau d'entiers. 
+//Écrivez un programme C qui trouve et affiche le plus grand élément dans un tableau d'entiers. 
 //Le programme doit demander le nombre d'éléments et les éléments du tableau.
+#include<stdio.h>
 
 int main(){
-    int nombre,i,min;
+    int nombre,i,max;
      printf("saisir le nombre des elements");
      scanf("%d",&nombre);
      int tab[nombre];
@@ -12,11 +13,11 @@ int main(){
         printf("saisir la  v1aleur");
         scanf("%d",&tab[i]);
         if (i == 0)
-         min=tab[0];
-        if (min>tab[i])
-         min=tab[i];
+         max=tab[0];
+        if (max<tab[i])
+         max=tab[i];
 
      }
-     printf("le minimum est : %d",min);
+     printf("le maximum est : %d",max);
      
 }
